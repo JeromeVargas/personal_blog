@@ -1,7 +1,17 @@
 ---
+import Social from "./Social.astro";
+
 const platform = "github";
 const username = "JeromeVargas";
 ---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer>
   <p>
@@ -10,4 +20,7 @@ const username = "JeromeVargas";
       target="_blank">{platform}</a
     >!
   </p>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
 </footer>
